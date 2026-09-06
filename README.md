@@ -12,8 +12,6 @@ A curated collection of Python scripts, exercises, and mini-projects covering co
 - **Problem Solving:** Algorithmic challenges, recursion, and sorting/searching patterns
 - **Automation & Scripting:** Practical utilities, API requests, and data parsing
 
----
-
 ## 📂 Repository Structure
 
 ```text
