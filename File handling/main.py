@@ -22,15 +22,30 @@ def readfile():
             path=Path(name)
             if path.exists():
                 with open(path,"r") as fs:
-                    data= fs.read(data)
+                    data= fs.read()
                 print(data) 
             else:
                 print("file with this name not  exists")           
      except Exception as err:
             print(f"an error occurr  {err} ")  
-            
+
 def upadatefile():
-    pass
+    try:
+        name=input("Enter the name of file:- ")
+        path=Path(name)
+        if Path.exists():
+            with open(path,"r") as fs:
+                data = fs.read()
+                print("Your current dataa:-  {data}")
+                
+                new_data = input("Enter new data to insert in file: ")
+                with open(path,"w") as fs:
+                    fs.write(new_data)
+                    print("successfully added new data")
+        else:
+            print("file with this name not exists")
+    except Exception as err:
+        print(err) 
 def deletefile():
     pass
 
